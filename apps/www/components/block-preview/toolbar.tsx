@@ -208,7 +208,7 @@ export interface CLIGroupButtonProps {
     theme?: string
 }
 
-interface RegistryInstallButtonProps extends Omit<React.ComponentPropsWithoutRef<'button'>, 'title'>, CLIGroupButtonProps {
+interface RegistryInstallButtonProps extends Omit<React.ComponentPropsWithoutRef<typeof Button>, 'title'>, CLIGroupButtonProps {
     title: string
     iconOnly?: boolean
     className?: string
